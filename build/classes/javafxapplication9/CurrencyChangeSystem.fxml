@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication9.CurrencyChangeSystemController">
+    <children>
+      <AnchorPane layoutX="-1.0" layoutY="27.0" prefHeight="73.0" prefWidth="643.0">
+         <children>
+            <Button fx:id="LogOut" layoutX="512.0" layoutY="21.0" mnemonicParsing="false" onAction="#handleButtonActionLogOut" prefHeight="31.0" prefWidth="104.0" style="-fx-background-color: rgb(255, 191, 0);" text="Log out" textFill="WHITE">
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="28.0" layoutY="16.0" prefHeight="42.0" prefWidth="271.0" style="-fx-font-size: 20;" text="Currency conversion System" textFill="#000066">
+               <font>
+                  <Font name="System Bold Italic" size="96.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="100.0" prefHeight="431.0" prefWidth="643.0">
+         <children>
+            <Label layoutX="172.0" layoutY="97.0" text="USD" textFill="#000066">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="398.0" layoutY="97.0" prefHeight="21.0" prefWidth="42.0" text="NIS" textFill="#000066">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="131.0" text="To" textFill="#000066">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UsdFiled" layoutX="93.0" layoutY="131.0" onAction="#handleTextFiledActionUsdFiled" />
+            <TextField fx:id="NisFiled" layoutX="346.0" layoutY="131.0" onAction="#handleTextFiledActionNisFiled" />
+            <Button fx:id="Convert" layoutX="256.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleButtonActionConvert" prefHeight="42.0" prefWidth="114.0" style="-fx-background-color: rgb(0, 0, 102);" text="Convert" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
